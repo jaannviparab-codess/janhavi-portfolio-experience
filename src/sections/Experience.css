@@ -1,0 +1,121 @@
+.experience__timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 8px;
+}
+
+.experience__rail {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.experience__rail::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent-teal), transparent);
+}
+
+.experience__dot {
+  position: relative;
+  top: 30px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--bg-base);
+  border: 2px solid var(--accent-teal);
+  box-shadow: 0 0 0 4px var(--accent-teal-soft);
+}
+
+.experience__card {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.experience__card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.experience__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--accent-blue-soft);
+  color: var(--accent-blue);
+  flex-shrink: 0;
+}
+
+.experience__card-head > div {
+  flex: 1;
+}
+
+.experience__role {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.experience__meta {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.experience__duration {
+  flex-shrink: 0;
+}
+
+.experience__bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 4px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.experience__bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--text-secondary);
+  font-size: 0.96rem;
+  padding-top: 12px;
+}
+
+.experience__bullets li:first-child {
+  padding-top: 16px;
+}
+
+.experience__check {
+  color: var(--accent-teal);
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+@media (max-width: 640px) {
+  .experience__timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .experience__rail {
+    display: none;
+  }
+
+  .experience__card {
+    padding: 24px;
+  }
+
+  .experience__card-head {
+    flex-wrap: wrap;
+  }
+}

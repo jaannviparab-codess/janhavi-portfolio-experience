@@ -1,0 +1,14 @@
+.projects__featured {
+  margin-bottom: 28px;
+}
+
+.projects__secondary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.projects__secondary > * {
+  flex: 1 1 380px;
+  max-width: 480px;
+}

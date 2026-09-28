@@ -1,0 +1,139 @@
+.hero {
+  padding-top: calc(var(--header-height) + 56px);
+  padding-bottom: 72px;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 48px;
+}
+
+.hero__content > * {
+  opacity: 0;
+  animation: hero-in var(--dur-slow) var(--ease-out) forwards;
+}
+
+.hero__greeting {
+  animation-delay: 40ms;
+  color: var(--accent-teal);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.hero__name {
+  animation-delay: 120ms;
+  font-size: clamp(2.2rem, 1.6rem + 3vw, 3.4rem);
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+
+.hero__headline {
+  animation-delay: 220ms;
+  font-size: clamp(1.05rem, 0.95rem + 0.5vw, 1.3rem);
+  font-weight: 600;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 18px;
+}
+
+.hero__tagline {
+  animation-delay: 320ms;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  max-width: 52ch;
+  margin-bottom: 34px;
+}
+
+.hero__actions {
+  animation-delay: 420ms;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.hero__social {
+  animation-delay: 500ms;
+  display: flex;
+  gap: 12px;
+}
+
+.hero__visual {
+  opacity: 0;
+  animation: hero-visual-in var(--dur-slow) var(--ease-out) forwards;
+  animation-delay: 260ms;
+}
+
+.hero-visual {
+  width: 100%;
+  height: auto;
+  animation: hero-float 7s ease-in-out infinite;
+}
+
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-visual-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 960px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__visual {
+    order: -1;
+    max-width: 380px;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: calc(var(--header-height) + 32px);
+    min-height: auto;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+}
