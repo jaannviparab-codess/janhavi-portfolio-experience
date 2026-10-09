@@ -13,10 +13,9 @@ export const personal = {
   phoneHref: 'tel:+918779150297',
   github: 'https://github.com/jaannviparab-codess',
   githubHandle: '@jaannviparab-codess',
-  // No LinkedIn URL was provided in the resume — leave null.
-  // If Janhavi adds one later, every component that reads this field
-  // will automatically show the LinkedIn link/button.
-  linkedin: null,
+  // Navbar, Hero, Contact and Footer all read this field and show the
+  // LinkedIn link/button whenever it is set.
+  linkedin: 'https://www.linkedin.com/in/janhavi-parab20092005',
   resumeUrl: '/resume/Janhavi_Prashant_Parab_Resume.pdf',
 }
 
@@ -138,6 +137,15 @@ export const simulations = [
     platform: 'Forage',
     description:
       'Conducted exploratory data analysis and risk profiling, AI-based delinquency prediction and data storytelling.',
+  },
+  {
+    company: 'JPMorgan Chase & Co.',
+    title: 'Quantitative Research Job Simulation',
+    platform: 'Forage',
+    // First sentence is the supplied description; the second lists only the
+    // practical tasks named on the JPMorgan certificate PDF.
+    description:
+      'Completed a Quantitative Research job simulation with JPMorgan Chase & Co. through Forage, gaining practical exposure to quantitative analysis, financial data, and research-oriented problem solving. Practical tasks: Investigate and analyze price data; Price a commodity storage contract; Credit risk analysis; Bucket FICO scores.',
   },
 ]
 
