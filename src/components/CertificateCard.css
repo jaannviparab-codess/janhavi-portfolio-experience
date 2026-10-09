@@ -1,0 +1,65 @@
+.certificate-card {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* The preview is the real certificate page, so it keeps its white paper
+   look; the frame just seats it neatly inside the dark card. */
+.certificate-card__preview {
+  display: block;
+  line-height: 0;
+  background: #fff;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.certificate-card__preview img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200 / 848;
+}
+
+.certificate-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 8px 8px;
+}
+
+.certificate-card__company {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.certificate-card__title {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.certificate-card__meta {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.certificate-card__detail {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+/* Keeps a date / "Issued by" phrase together instead of orphaning one word */
+.certificate-card__nowrap {
+  white-space: nowrap;
+}
+
+.certificate-card__actions {
+  margin-top: auto;
+  padding-top: 14px;
+}

@@ -152,6 +152,45 @@ export const certification = {
   date: 'September 2025',
 }
 
+// Job-simulation certificates. Every value is copied from the certificate PDF
+// itself. The PDFs live in /public/certificates and each preview image in
+// /public/certificates/previews was rendered from page 1 of its PDF.
+export const certificates = [
+  {
+    id: 'deloitte-data-analytics',
+    company: 'Deloitte',
+    title: 'Data Analytics Job Simulation',
+    credential: 'Certificate of Completion',
+    date: 'June 25th, 2026',
+    period: 'April 2026 to June 2026',
+    issuedBy: 'Forage',
+    pdfUrl: '/certificates/deloitte-data-analytics-job-simulation.pdf',
+    previewUrl: '/certificates/previews/deloitte-data-analytics-job-simulation.png',
+  },
+  {
+    id: 'tata-genai-data-analytics',
+    company: 'TATA',
+    title: 'GenAI Powered Data Analytics Job Simulation',
+    credential: 'Certificate of Completion',
+    date: 'July 11th, 2026',
+    period: 'June 2026 to July 2026',
+    issuedBy: 'Forage',
+    pdfUrl: '/certificates/tata-genai-powered-data-analytics-job-simulation.pdf',
+    previewUrl: '/certificates/previews/tata-genai-powered-data-analytics-job-simulation.png',
+  },
+  {
+    id: 'jpmorgan-quantitative-research',
+    company: 'JPMorgan Chase & Co.',
+    title: 'Quantitative Research Job Simulation',
+    credential: 'Certificate of Completion',
+    date: 'June 25th, 2026',
+    period: 'June 2026',
+    issuedBy: 'Forage',
+    pdfUrl: '/certificates/jpmorgan-quantitative-research-job-simulation.pdf',
+    previewUrl: '/certificates/previews/jpmorgan-quantitative-research-job-simulation.png',
+  },
+]
+
 export const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
