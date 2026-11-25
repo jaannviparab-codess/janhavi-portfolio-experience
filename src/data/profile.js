@@ -25,7 +25,7 @@ export const about = {
   highlights: [
     { label: 'B.Sc. Information Technology', value: 'CGPA 9.10' },
     { label: 'AI Automation Specialist', value: 'MCM Pvt. Ltd.' },
-    { label: 'Compliance Team', value: '3 Months experience' },
+    { label: 'Compliance Team', value: '4 Months experience' },
     { label: 'Currently learning', value: 'Data Science, AI & ML' },
   ],
 }
@@ -33,7 +33,7 @@ export const about = {
 export const experience = {
   role: 'AI Automation Specialist',
   company: 'MCM Pvt. Ltd.',
-  duration: '3 Months',
+  duration: '4 Months',
   team: 'Compliance Team',
   bullets: [
     'Develop Python-based backend functionality and automation supporting technology-driven workflows within the Compliance Team.',
@@ -68,7 +68,7 @@ export const skillGroups = [
   },
   {
     category: 'Tools',
-    items: ['VS Code', 'Claude', 'Git', 'GitHub', 'MS Office', 'PowerPoint', 'Canva'],
+    items: ['VS Code', 'Claude Code', 'n8n', 'Git', 'GitHub', 'MS Office', 'PowerPoint', 'Canva'],
   },
 ]
 
