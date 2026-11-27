@@ -151,9 +151,22 @@ export const simulations = [
 
 export const education = {
   degree: 'B.Sc. in Information Technology',
+  institute: "St. Arnold's Degree College",
   cgpa: '9.10',
   status: 'Completed 2026',
 }
+
+export const achievements = [
+  {
+    id: 'college-rank',
+    value: '2nd',
+    label: 'College Rank',
+    detail: 'In Semester 5, across the college',
+  },
+  { id: 'semester-5-cgpa', value: '9.70', label: 'Semester 5 CGPA' },
+  { id: 'bi-topper', value: 'Topper', label: 'Subject Topper – Business Intelligence' },
+  { id: 'bi-marks', value: '143/150', label: 'Business Intelligence Marks' },
+]
 
 export const certification = {
   name: 'Advanced Excel',

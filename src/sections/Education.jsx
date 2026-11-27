@@ -1,6 +1,7 @@
 import SectionHeading from '../components/SectionHeading'
 import Reveal from '../components/Reveal'
 import Certification from './Certification'
+import Achievements from './Achievements'
 import { education } from '../data/profile'
 import { GraduationCapIcon } from '../components/icons'
 import './Credentials.css'
@@ -19,13 +20,16 @@ export default function Education() {
             <div>
               <p className="credential-card__eyebrow">Degree</p>
               <h3 className="credential-card__title">{education.degree}</h3>
+              <p className="credential-card__institute">{education.institute}</p>
               <p className="credential-card__meta">
                 CGPA: {education.cgpa} · {education.status}
               </p>
             </div>
           </Reveal>
 
-          <Certification />
+          <Certification>
+            <Achievements />
+          </Certification>
         </div>
       </div>
     </section>

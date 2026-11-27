@@ -4,7 +4,7 @@ import { certification, certificates } from '../data/profile'
 import { AwardIcon } from '../components/icons'
 import './Credentials.css'
 
-export default function Certification() {
+export default function Certification({ children }) {
   return (
     <>
       <Reveal as="article" delay={100} className="credential-card card card--interactive">
@@ -17,6 +17,8 @@ export default function Certification() {
           <p className="credential-card__meta">{certification.date}</p>
         </div>
       </Reveal>
+
+      {children}
 
       {/* Spans the full width of the parent .credentials__grid */}
       <div className="certificates">
